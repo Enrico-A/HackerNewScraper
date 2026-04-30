@@ -1,15 +1,123 @@
-# Cartella di configurazione locale di Visual Studio Code.
-.vscode
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Ambiente virtuale Python locale.
-.venv
+# C extensions
+*.so
 
-# Database generati durante l'esecuzione dello scraper.
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Linters / formatters
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+# Pipfile.lock
+
+# poetry
+# poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# SQLite databases
 *.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
 
-# Bytecode Python generato automaticamente.
-*.pyc
+# Logs
+*.log
 
-# Cache e directory temporanee prodotte da pytest.
-.pytest_cache
-pytest-cache-files-*
+# Local settings
+*.local
+
+# IDEs / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS / Windows files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
