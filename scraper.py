@@ -5,6 +5,8 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
+from database import init_db, insert_article
+
 
 BASE_URL = "https://news.ycombinator.com/"
 MAX_PAGES = 3
@@ -23,6 +25,7 @@ def clean_score(score_string):
 
 
 url = BASE_URL
+init_db()
 
 for page in range(1, MAX_PAGES + 1):
     response = requests.get(url, headers=headers, timeout=10)
@@ -45,8 +48,9 @@ for page in range(1, MAX_PAGES + 1):
             continue
 
         title = title_tag.get_text(strip=True)
-        link = title_tag.get("href", "")
+        link = urljoin(BASE_URL, title_tag.get("href", ""))
         points = clean_score(score_tag.get_text(strip=True) if score_tag else "")
+        insert_article(title, link, points)
 
         print(f"{index}. {title}")
         print(f"   Punti: {points}")
