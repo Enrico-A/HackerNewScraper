@@ -1,3 +1,15 @@
+# Cartella di configurazione locale di Visual Studio Code.
 .vscode
+
+# Ambiente virtuale Python locale.
 .venv
+
+# Database generati durante l'esecuzione dello scraper.
 *.db
+
+# Bytecode Python generato automaticamente.
+*.pyc
+
+# Cache e directory temporanee prodotte da pytest.
+.pytest_cache
+pytest-cache-files-*

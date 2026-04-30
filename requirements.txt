@@ -1,4 +1,14 @@
+# Libreria HTTP usata dallo scraper per scaricare le pagine di Hacker News.
 requests
+
+# Parser HTML usato per estrarre titoli, link e punteggi.
 beautifulsoup4
+
+# Strumento di analisi dati usato per leggere e ordinare gli articoli dal database.
 pandas
+
+# Libreria usata per generare il grafico dei punteggi.
 matplotlib
+
+# Framework di test usato per verificare le funzioni principali.
+pytest
